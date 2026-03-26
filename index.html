@@ -3,23 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CloudNest Shillong | Luxury Stay</title>
+<title>CloudNest Shillong</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin:0;
-    font-family:'Poppins', sans-serif;
+    font-family:'Inter', sans-serif;
+    background:#f9f9f9;
+}
+
+/* NAVBAR */
+nav {
+    position:fixed;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+nav h2 {
+    font-family:'Playfair Display';
+}
+
+nav a {
+    text-decoration:none;
     color:#333;
-    background:#f8f8f8;
+    margin-left:20px;
 }
 
 /* HERO */
 .hero {
     height:100vh;
-    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1501117716987-c8e1ecb2105c');
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1505691938895-1758d7feb511');
     background-size:cover;
     background-position:center;
     display:flex;
@@ -29,53 +50,44 @@ body {
     color:white;
 }
 
-.hero-content {
-    animation: fadeUp 1.5s ease;
-}
-
 .hero h1 {
     font-size:60px;
-    font-family:'Playfair Display', serif;
+    font-family:'Playfair Display';
 }
 
 .hero p {
-    font-size:20px;
     margin:20px 0;
 }
 
 .btn {
-    background:#c9a96e;
-    color:white;
+    background:#caa25d;
     padding:14px 30px;
+    color:white;
     text-decoration:none;
-    border-radius:3px;
 }
 
 /* SECTION */
 .section {
-    padding:80px 20px;
+    padding:100px 40px;
     text-align:center;
 }
 
 .section h2 {
-    font-family:'Playfair Display', serif;
-    font-size:32px;
-    margin-bottom:10px;
+    font-family:'Playfair Display';
+    font-size:36px;
 }
 
 /* ROOMS */
 .rooms {
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
     gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
     margin-top:40px;
 }
 
 .card {
     width:300px;
-    border-radius:10px;
-    overflow:hidden;
     background:white;
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
@@ -86,7 +98,7 @@ body {
     object-fit:cover;
 }
 
-.card-content {
+.card div {
     padding:20px;
 }
 
@@ -94,48 +106,44 @@ body {
 .cta {
     background:#111;
     color:white;
-    padding:60px 20px;
+    padding:80px;
     text-align:center;
 }
 
 /* FOOTER */
 .footer {
-    padding:20px;
+    padding:30px;
     text-align:center;
-    color:#777;
-}
-
-/* ANIMATION */
-@keyframes fadeUp {
-    from {
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to {
-        opacity:1;
-        transform:translateY(0);
-    }
+    font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
+<!-- NAV -->
+<nav>
+<h2>CloudNest</h2>
+<div>
+<a href="#">Home</a>
+<a href="#">Rooms</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
 <!-- HERO -->
 <div class="hero">
-<div class="hero-content">
-<h1>CloudNest Shillong</h1>
-<p>Experience luxury stays in the heart of Shillong</p>
-<a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room" class="btn">
-Book Now on WhatsApp
-</a>
+<div>
+<h1>Luxury Stay in Shillong</h1>
+<p>Modern guesthouse with direct WhatsApp booking</p>
+<a href="https://wa.me/917005732873" class="btn">Book Now</a>
 </div>
 </div>
 
 <!-- ABOUT -->
 <div class="section">
 <h2>Welcome to CloudNest</h2>
-<p>A premium guesthouse designed for comfort, elegance, and direct WhatsApp booking.</p>
+<p>Experience comfort, elegance, and peaceful stays in Shillong.</p>
 </div>
 
 <!-- ROOMS -->
@@ -145,8 +153,8 @@ Book Now on WhatsApp
 <div class="rooms">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a">
-<div class="card-content">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+<div>
 <h3>Standard Room</h3>
 <p>₹1,500 / night</p>
 </div>
@@ -154,7 +162,7 @@ Book Now on WhatsApp
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
-<div class="card-content">
+<div>
 <h3>Deluxe Room</h3>
 <p>₹2,500 / night</p>
 </div>
@@ -162,7 +170,7 @@ Book Now on WhatsApp
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
-<div class="card-content">
+<div>
 <h3>Family Room</h3>
 <p>₹3,500 / night</p>
 </div>
@@ -171,22 +179,11 @@ Book Now on WhatsApp
 </div>
 </div>
 
-<!-- WHY -->
-<div class="section">
-<h2>Why Guests Choose Us</h2>
-<p>✔ Clean & luxury rooms<br>
-✔ Easy WhatsApp booking<br>
-✔ Peaceful location<br>
-✔ Professional service</p>
-</div>
-
 <!-- CTA -->
 <div class="cta">
-<h2>Start Getting Direct Bookings</h2>
-<p>Book instantly through WhatsApp without any commission.</p>
-<a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room" class="btn">
-Message on WhatsApp
-</a>
+<h2>Book Direct. No Commission.</h2>
+<p>Message us on WhatsApp to confirm instantly.</p>
+<a href="https://wa.me/917005732873" class="btn">Message Now</a>
 </div>
 
 <!-- FOOTER -->
