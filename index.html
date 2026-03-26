@@ -1,18 +1,16 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<me<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CloudNest Shillong</title>
+<title>CloudNest Shillong | Premium Stay</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family:'Poppins', sans-serif;
     color:#333;
 }
 
@@ -20,9 +18,8 @@ body {
 .hero {
     height:100vh;
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url('https://picsum.photos/1600/900?blur=1');
+    url('https://picsum.photos/1600/900?blur=2');
     background-size:cover;
-    background-position:center;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -31,22 +28,22 @@ body {
 }
 
 .hero h1 {
-    font-size:50px;
-    margin-bottom:10px;
+    font-family:'Playfair Display', serif;
+    font-size:60px;
 }
 
 .hero p {
+    margin:15px 0;
     font-size:18px;
-    margin-bottom:20px;
 }
 
 .btn {
     background:#25d366;
     color:white;
-    padding:14px 28px;
+    padding:14px 30px;
     text-decoration:none;
-    border-radius:6px;
-    font-weight:bold;
+    border-radius:30px;
+    font-weight:600;
 }
 
 /* SECTION */
@@ -56,14 +53,8 @@ body {
 }
 
 .section h2 {
-    font-size:32px;
-    margin-bottom:10px;
-}
-
-.section p {
-    max-width:600px;
-    margin:auto;
-    color:#666;
+    font-family:'Playfair Display', serif;
+    font-size:36px;
 }
 
 /* ROOMS */
@@ -71,15 +62,20 @@ body {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:20px;
+    gap:25px;
     margin-top:40px;
 }
 
 .card {
     width:300px;
-    border-radius:10px;
+    border-radius:15px;
     overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-10px);
 }
 
 .card img {
@@ -92,19 +88,24 @@ body {
     padding:20px;
 }
 
-/* CTA */
-.cta {
+/* TESTIMONIAL */
+.testimonial {
     background:#111;
     color:white;
     padding:60px 20px;
-    text-align:center;
+}
+
+/* CTA */
+.cta {
+    background:#25d366;
+    color:white;
+    padding:60px 20px;
 }
 
 /* FOOTER */
 .footer {
     padding:20px;
     text-align:center;
-    font-size:14px;
     color:#777;
 }
 </style>
@@ -116,9 +117,9 @@ body {
 <div class="hero">
 <div>
 <h1>CloudNest Shillong</h1>
-<p>Experience peaceful stays in the heart of Shillong</p>
-<a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room%20at%20CloudNest%20Shillong" class="btn">
-Book Now on WhatsApp
+<p>Luxury comfort in the heart of Shillong</p>
+<a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20CloudNest" class="btn">
+Book on WhatsApp
 </a>
 </div>
 </div>
@@ -126,7 +127,7 @@ Book Now on WhatsApp
 <!-- ABOUT -->
 <div class="section">
 <h2>Welcome to CloudNest</h2>
-<p>A modern guesthouse designed for comfort, peace, and easy booking. Enjoy your stay in Shillong with fast WhatsApp booking and zero hassle.</p>
+<p>Experience a premium stay with modern comfort, peaceful surroundings, and instant WhatsApp booking.</p>
 </div>
 
 <!-- ROOMS -->
@@ -154,7 +155,7 @@ Book Now on WhatsApp
 <div class="card">
 <img src="https://picsum.photos/400/300?3">
 <div class="card-content">
-<h3>Family Room</h3>
+<h3>Family Suite</h3>
 <p>₹3,500 / night</p>
 </div>
 </div>
@@ -162,20 +163,16 @@ Book Now on WhatsApp
 </div>
 </div>
 
-<!-- WHY -->
-<div class="section">
-<h2>Why Guests Choose Us</h2>
-<p>✔ Clean & comfortable rooms<br>
-✔ Easy WhatsApp booking<br>
-✔ Peaceful location<br>
-✔ Friendly service</p>
+<!-- TESTIMONIAL -->
+<div class="testimonial">
+<h2>What Guests Say</h2>
+<p>"Beautiful stay and super easy booking on WhatsApp. Highly recommended!"</p>
 </div>
 
 <!-- CTA -->
 <div class="cta">
 <h2>Book Your Stay Today</h2>
-<p>Send us a message and confirm your booking instantly.</p>
-<a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room%20at%20CloudNest%20Shillong" class="btn">
+<a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20CloudNest" class="btn">
 Message on WhatsApp
 </a>
 </div>
@@ -183,156 +180,6 @@ Message on WhatsApp
 <!-- FOOTER -->
 <div class="footer">
 © 2026 CloudNest Shillong
-</div>
-
-</body>
-</html>ta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CloudNest Shillong | Book Your Stay</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-/* HERO */
-.hero {
-    background: url('https://picsum.photos/1600/900?random=1') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 140px 20px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    background: #25d366;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 6px;
-    display: inline-block;
-}
-
-/* SECTIONS */
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.section h2 {
-    margin-bottom: 20px;
-}
-
-/* ROOMS */
-.rooms {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 10px;
-    width: 260px;
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card-content {
-    padding: 15px;
-}
-
-/* FOOTER */
-.footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-</style>
-</head>
-
-<body>
-
-<!-- HERO -->
-<div class="hero">
-    <h1>CloudNest Shillong</h1>
-    <p>Peaceful stay in the hills of Shillong</p>
-    <a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room%20at%20CloudNest%20Shillong" class="btn">
-        Book on WhatsApp
-    </a>
-</div>
-
-<!-- ABOUT -->
-<div class="section">
-    <h2>Welcome to CloudNest</h2>
-    <p>A calm and comfortable guesthouse in Shillong with beautiful surroundings and easy booking.</p>
-</div>
-
-<!-- ROOMS -->
-<div class="section">
-    <h2>Our Rooms</h2>
-
-    <div class="rooms">
-        <div class="card">
-            <img src="https://picsum.photos/300/200?1">
-            <div class="card-content">
-                <h3>Standard Room</h3>
-                <p>₹1,500 / night</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://picsum.photos/300/200?2">
-            <div class="card-content">
-                <h3>Deluxe Room</h3>
-                <p>₹2,500 / night</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://picsum.photos/300/200?3">
-            <div class="card-content">
-                <h3>Family Room</h3>
-                <p>₹3,500 / night</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- WHY CHOOSE -->
-<div class="section">
-    <h2>Why Choose Us</h2>
-    <p>Clean rooms • Fast WhatsApp booking • Peaceful environment • Friendly service</p>
-</div>
-
-<!-- CONTACT -->
-<div class="section">
-    <h2>Contact Us</h2>
-    <p>📞 7005732873</p>
-    <a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room%20at%20CloudNest%20Shillong" class="btn">
-        Message on WhatsApp
-    </a>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-    <p>© 2026 CloudNest Shillong</p>
 </div>
 
 </body>
