@@ -5,105 +5,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CloudNest Shillong | Luxury Stay</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin:0;
-    font-family: 'Inter', sans-serif;
-    color:#222;
-}
-
-/* NAV */
-nav {
-    position:fixed;
-    width:100%;
-    top:0;
-    display:flex;
-    justify-content:space-between;
-    padding:20px 40px;
-    background:rgba(0,0,0,0.4);
-    backdrop-filter: blur(8px);
-    color:white;
-    z-index:1000;
-}
-
-nav h2 {
-    font-family:'Playfair Display', serif;
-}
-
-nav a {
-    color:white;
-    margin-left:20px;
-    text-decoration:none;
-    font-size:14px;
+    font-family:'Poppins', sans-serif;
+    color:#333;
+    background:#f8f8f8;
 }
 
 /* HERO */
 .hero {
-    position: relative;
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1501117716987-c8e1ecb2105c') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.overlay {
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1501117716987-c8e1ecb2105c');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
 }
 
 .hero-content {
-    position: relative;
-    color: white;
-    z-index: 2;
+    animation: fadeUp 1.5s ease;
 }
 
 .hero h1 {
-    font-size: 70px;
+    font-size:60px;
     font-family:'Playfair Display', serif;
-    letter-spacing:2px;
 }
 
 .hero p {
     font-size:20px;
     margin:20px 0;
-    opacity:0.9;
 }
 
 .btn {
     background:#c9a96e;
+    color:white;
     padding:14px 30px;
     text-decoration:none;
-    color:white;
     border-radius:3px;
-    transition:0.3s;
-}
-
-.btn:hover {
-    background:#b8965a;
 }
 
 /* SECTION */
 .section {
-    padding:100px 20px;
+    padding:80px 20px;
     text-align:center;
 }
 
 .section h2 {
     font-family:'Playfair Display', serif;
-    font-size:36px;
+    font-size:32px;
     margin-bottom:10px;
-}
-
-.section p {
-    max-width:600px;
-    margin:auto;
-    color:#666;
 }
 
 /* ROOMS */
@@ -116,20 +73,16 @@ nav a {
 }
 
 .card {
-    width:320px;
-    overflow:hidden;
+    width:300px;
     border-radius:10px;
+    overflow:hidden;
+    background:white;
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-
-.card:hover {
-    transform:translateY(-10px);
 }
 
 .card img {
     width:100%;
-    height:220px;
+    height:200px;
     object-fit:cover;
 }
 
@@ -137,40 +90,22 @@ nav a {
     padding:20px;
 }
 
-/* GALLERY */
-.gallery {
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
-}
-
-.gallery img {
-    width:100%;
-    height:300px;
-    object-fit:cover;
-}
-
 /* CTA */
 .cta {
     background:#111;
     color:white;
-    padding:80px 20px;
-}
-
-.cta h2 {
-    font-family:'Playfair Display', serif;
+    padding:60px 20px;
+    text-align:center;
 }
 
 /* FOOTER */
 .footer {
     padding:20px;
     text-align:center;
-    font-size:14px;
     color:#777;
 }
-.hero-content {
-    animation: fadeUp 1.5s ease;
-}
 
+/* ANIMATION */
 @keyframes fadeUp {
     from {
         opacity:0;
@@ -181,45 +116,36 @@ nav a {
         transform:translateY(0);
     }
 }
+</style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-    <h2>CloudNest Shillong</h2>
-    <div>
-        <a href="#">Home</a>
-        <a href="#">Rooms</a>
-        <a href="#">Contact</a>
-    </div>
-</nav>
-
 <!-- HERO -->
-<section class="hero">
-<div>
-    <h1>Luxury Stay in Shillong</h1>
-    <p>Experience comfort, elegance, and peaceful mountain living</p>
-    <a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room" class="btn">
-        Book on WhatsApp
-    </a>
+<div class="hero">
+<div class="hero-content">
+<h1>CloudNest Shillong</h1>
+<p>Experience luxury stays in the heart of Shillong</p>
+<a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room" class="btn">
+Book Now on WhatsApp
+</a>
 </div>
-</section>
+</div>
 
 <!-- ABOUT -->
-<section class="section">
-    <h2>Welcome to CloudNest</h2>
-    <p>A premium guesthouse crafted for comfort and simplicity. Book instantly via WhatsApp with no middlemen.</p>
-</section>
+<div class="section">
+<h2>Welcome to CloudNest</h2>
+<p>A premium guesthouse designed for comfort, elegance, and direct WhatsApp booking.</p>
+</div>
 
 <!-- ROOMS -->
-<section class="section">
+<div class="section">
 <h2>Our Rooms</h2>
 
 <div class="rooms">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+<img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a">
 <div class="card-content">
 <h3>Standard Room</h3>
 <p>₹1,500 / night</p>
@@ -235,31 +161,33 @@ nav a {
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
 <div class="card-content">
-<h3>Family Suite</h3>
+<h3>Family Room</h3>
 <p>₹3,500 / night</p>
 </div>
 </div>
 
 </div>
-</section>
+</div>
 
-<!-- GALLERY -->
-<section class="gallery">
-<img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2105c">
-<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
-<img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb">
-</section>
+<!-- WHY -->
+<div class="section">
+<h2>Why Guests Choose Us</h2>
+<p>✔ Clean & luxury rooms<br>
+✔ Easy WhatsApp booking<br>
+✔ Peaceful location<br>
+✔ Professional service</p>
+</div>
 
 <!-- CTA -->
-<section class="cta">
-    <h2>Book Your Stay Today</h2>
-    <p>Message us instantly and confirm your booking</p>
-    <a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room" class="btn">
-        Message on WhatsApp
-    </a>
-</section>
+<div class="cta">
+<h2>Start Getting Direct Bookings</h2>
+<p>Book instantly through WhatsApp without any commission.</p>
+<a href="https://wa.me/917005732873?text=Hi%20I%20want%20to%20book%20a%20room" class="btn">
+Message on WhatsApp
+</a>
+</div>
 
 <!-- FOOTER -->
 <div class="footer">
