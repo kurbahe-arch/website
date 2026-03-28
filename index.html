@@ -1,3 +1,221 @@
-<div style="background:black;color:white;padding:10px;text-align:center;font-size:14px;">
-This is a demo website created by Shillong Web Studio. This can be customized for your guesthouse within 24 hours.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PineHill Stay</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+color:#333;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#25d366;
+color:white;
+padding:14px 28px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+/* SECTION */
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.section h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.section p{
+max-width:600px;
+margin:auto;
+color:#666;
+}
+
+/* ROOMS */
+.rooms{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+width:300px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+/* GALLERY */
+.gallery{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:30px;
+justify-content:center;
+}
+
+.gallery img{
+width:300px;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* CTA */
+.cta{
+background:#111;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+/* FOOTER */
+.footer{
+padding:20px;
+text-align:center;
+font-size:14px;
+color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<div>
+<h1>PineHill Stay</h1>
+<p>Peaceful hillside stay with beautiful views and easy booking</p>
+
+<a href="#" class="btn">
+Book on WhatsApp
+</a>
+
+<p style="margin-top:15px;font-size:14px;">
+Direct booking • No commission • Instant confirmation
+</p>
 </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+<h2>Welcome to PineHill Stay</h2>
+<p>Experience comfort, peace, and scenic beauty. Perfect for travelers looking to relax and enjoy nature with easy direct booking.</p>
+</div>
+
+<!-- ROOMS -->
+<div class="section">
+<h2>Our Rooms</h2>
+
+<div class="rooms">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+<div class="card-content">
+<h3>Standard Room</h3>
+<p>₹1,500 / night</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa">
+<div class="card-content">
+<h3>Deluxe Room</h3>
+<p>₹2,500 / night</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<div class="card-content">
+<h3>Family Room</h3>
+<p>₹3,500 / night</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+<h2>Gallery</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210f7">
+<img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4">
+<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+</div>
+</div>
+
+<!-- WHY -->
+<div class="section">
+<h2>Why Guests Choose Us</h2>
+<p>✔ Clean & comfortable rooms<br>
+✔ Beautiful scenic location<br>
+✔ Easy WhatsApp booking<br>
+✔ Friendly service</p>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+<h2>Book Your Stay Today</h2>
+<p>Send us a message and confirm your booking instantly.</p>
+
+<a href="#" class="btn">
+Message on WhatsApp
+</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+© 2026 PineHill Stay
+</div>
+
+</body>
+</html>
